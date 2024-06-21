@@ -8,59 +8,164 @@
 
 [![PrimeReact Hero](https://www.primefaces.org/static/social/primereact-preview.jpg)](https://www.primereact.org)
 
-# PrimeReact
+# Projeto Frontend
 
-PrimeReact is a rich set of open source UI Components for React. See [PrimeReact homepage](https://primereact.org/) for live showcase and documentation.
+## Objetivo
 
-## Download
+Construir um Dashboard utilizando React.
 
-PrimeReact is available at [npm](https://www.npmjs.com/package/primereact).
+## Estrutura do Projeto
 
-```
-# Using npm
-npm install primereact
+- **Source Code:** [react-admin-ui](https://github.com/safak/react-admin-ui)
 
-# Using yarn
-yarn add primereact
+## Passos para Configuração e Desenvolvimento
 
-# Using pnpm
-pnpm add primereact
-```
+### 1. Clonar o Repositório de Referência
 
-## Import
+1. **Obter o código fonte:**
+   - Usaremos como referência o projeto disponibilizado no GitHub.
 
-Each component can be imported individually so that you only bundle what you use. Import path is available in the documentation of the corresponding component.
+2. **Clonar o repositório:**
+   - Clique no botão `<Code>` no repositório do GitHub.
+   - Copie o link do repositório: `https://github.com/safak/react-admin-ui.git`.
 
-```javascript
-//import { ComponentName } from 'primereact/{componentname}';
-import { Button } from 'primereact/button';
+3. **Criar a estrutura do projeto no seu computador:**
+   - No seu Desktop, crie uma nova pasta para o projeto.
+   - Nomeie a pasta como `Projeto Frontend`.
 
-export default function MyComponent() {
-  return (
-    <Button label="PrimeReact" />
-  )
-}
-```
+4. **Abrir a pasta no VSCode:**
+   - Abra o Visual Studio Code (VSCode).
+   - No menu, selecione `File > Open Folder...` e escolha a pasta `Projeto Frontend`.
 
-## Theming
+5. **Clonar o repositório no terminal do VSCode:**
+   - Abra o terminal no VSCode (`Ctrl + ` ` ou vá em `Terminal > New Terminal`).
+   - No terminal, execute o comando:
+     ```bash
+     git clone https://github.com/safak/react-admin-ui.git
+     ```
 
-PrimeReact has two theming modes; styled or unstyled.
+### 2. Instalar Dependências
 
-**Styled Mode**
+1. **Navegar para o diretório do projeto clonado:**
+   - No terminal, execute:
+     ```bash
+     cd react-admin-ui
+     ```
 
-Styled mode is based on pre-skinned components with opinionated themes like Material, Bootstrap or PrimeOne themes. Theme is the required css file to be imported, visit the [Themes](https://primereact.org/theming) section for the complete list of available themes to choose from.
+2. **Instalar as dependências do projeto:**
+   - Certifique-se de ter o Node.js e o npm instalados no seu sistema.
+   - No terminal, execute:
+     ```bash
+     npm install
+     ```
 
-```javascript
-// theme
-import 'primereact/resources/themes/lara-light-cyan/theme.css';
-```
+### 3. Executar o Projeto Localmente
 
-**Unstyled Mode**
+1. **Iniciar o servidor de desenvolvimento:**
+   - No terminal, execute:
+     ```bash
+     npm start
+     ```
 
-Unstyled mode is disabled by default for all components. Using the PrimeReact context, set `unstyled` as true to enable it globally. Visit the [Unstyled mode](https://primereact.org/unstyled) documentation for more information and examples.
+2. **Acessar o projeto no navegador:**
+   - Após iniciar o servidor, abra o navegador e vá para `http://localhost:3000`.
 
-## Contributors
+### 4. Criar Componentes
 
-<a href="https://github.com/primefaces/primereact/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=primefaces/primereact" />
-</a>
+1. **Criar a pasta `components`:**
+   - No diretório `src`, crie uma nova pasta chamada `components`.
+
+2. **Criar a pasta `navbar` dentro de `components`:**
+   - Dentro da pasta `components`, crie uma nova pasta chamada `navbar`.
+
+3. **Criar o arquivo `Navbar.tsx`:**
+   - Dentro da pasta `navbar`, crie um arquivo chamado `Navbar.tsx` e adicione o seguinte código:
+
+     ```typescript
+     import './navbar.scss';
+
+     const Navbar = () => {
+         return (
+             <div className="navbar">
+                 Navbar
+             </div>
+         );
+     };
+
+     export default Navbar;
+     ```
+
+4. **Criar o arquivo `navbar.scss`:**
+   - Ainda dentro da pasta `navbar`, crie um arquivo chamado `navbar.scss` e adicione o seguinte código:
+
+     ```scss
+     .navbar {
+         // Adicione seu estilo aqui
+     }
+     ```
+
+
+
+#### Footer
+
+1. **Criar a pasta `footer` dentro de `components`:**
+   - Dentro da pasta `components`, crie uma nova pasta chamada `footer`.
+
+2. **Criar o arquivo `Footer.tsx`:**
+   - Dentro da pasta `footer`, crie um arquivo chamado `Footer.tsx` e adicione o seguinte código:
+
+     ```typescript
+     import './footer.scss';
+
+     const Footer = () => {
+         return (
+             <div className="footer">
+                 Footer
+             </div>
+         );
+     };
+
+     export default Footer;
+     ```
+
+3. **Criar o arquivo `footer.scss`:**
+   - Ainda dentro da pasta `footer`, crie um arquivo chamado `footer.scss` e adicione o seguinte código:
+
+     ```scss
+     .footer {
+         // Adicione seu estilo aqui
+     }
+     ```
+
+
+#### Menu
+
+1. **Criar a pasta `menu` dentro de `components`:**
+   - Dentro da pasta `components`, crie uma nova pasta chamada `menu`.
+
+2. **Criar o arquivo `Menu.tsx`:**
+   - Dentro da pasta `menu`, crie um arquivo chamado `Menu.tsx` e adicione o seguinte código:
+
+     ```typescript
+     import './menu.scss';
+
+     const Menu = () => {
+         return (
+             <div className="menu">
+                 Menu
+             </div>
+         );
+     };
+
+     export default Menu;
+     ```
+
+3. **Criar o arquivo `menu.scss`:**
+   - Ainda dentro da pasta `menu`, crie um arquivo chamado `menu.scss` e adicione o seguinte código:
+
+     ```scss
+     .menu {
+         // Adicione seu estilo aqui
+     }
+     ``
+
